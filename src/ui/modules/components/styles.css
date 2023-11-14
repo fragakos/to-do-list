@@ -1,0 +1,144 @@
+body {
+  font-family: "Assistant", sans-serif !important;
+  background: linear-gradient(300deg, #45474b, #495e57, #f4ce14);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+#main_container {
+  height: 100vh;
+}
+#content {
+  background-color: #495e57;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+  margin: 0;
+  display: block;
+  min-height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.simple_centered {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+button svg {
+  display: block;
+}
+.spaced {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.fixed {
+  max-width: 250px;
+  min-width: 250px;
+}
+#todos {
+  display: inline-block;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
+form {
+  background-color: #f4ce14;
+}
+
+.clean_rounded {
+  width: 50rem;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+li > button {
+  background-color: #495e57;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 0;
+  border-radius: 7px;
+}
+
+li > button:hover {
+  background-color: #dc3545; /* Change the background color when hovering over the button */
+}
+
+/* Define the scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* Light background color for the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Round the corners of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* Button (not commonly used) */
+::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar button */
+}
+
+/* Corner (between vertical and horizontal scrollbar) */
+::-webkit-scrollbar-corner {
+  background-color: #f5f5f5; /* Match the track background color */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#date {
+  color: #f5f7f8;
+}
