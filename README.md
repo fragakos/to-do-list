@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed with Github pages at https://fragakos.github.io/to-do-list/
 
 ## Available Scripts
 
